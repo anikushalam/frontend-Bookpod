@@ -7,13 +7,16 @@ nav {
   justify-content: space-around;
 }
 
+.hr-span {
+  display: none;
+}
 #book-pod {
   margin-left: -5.2rem;
   font-size: 2rem;
 }
 #book-pod span {
   font-size: 2.3rem;
-  color: blue;
+  color: rgb(19, 79, 129);
 }
 ul {
   display: flex;
@@ -57,7 +60,7 @@ li {
 }
 
 .header h1 > span {
-  color: rgb(43, 43, 187);
+  color: rgb(19, 79, 129);
 }
 
 .header p {
@@ -68,7 +71,7 @@ li {
 .header button {
   color: white;
   font-size: 1.3rem;
-  background-color: rgb(43, 43, 187);
+  background-color: rgb(19, 79, 129);
   padding: 18px 45px;
   border-radius: 10px;
   border-style: none;
@@ -110,12 +113,15 @@ li {
 }
 .section-text h5 {
   margin-top: 0px;
-  color: rgb(43, 43, 187);
+  color: rgb(19, 79, 129);
   font-size: 1.2rem;
 }
 .section-text h1 {
   margin-top: -30px;
   font-size: 2.4rem;
+}
+.section-text h2 {
+  display: none;
 }
 .section-text p {
   margin-top: -20px;
@@ -133,7 +139,7 @@ li {
 }
 .footer {
   border: 0px none white;
-  background-color: rgb(43, 43, 187);
+  background-color: rgb(19, 79, 129);
   border-radius: 20px;
 }
 
@@ -166,4 +172,127 @@ li {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 567px) {
+  body {
+    margin: 10px 20px;
+  }
+  nav {
+    justify-content: space-evenly;
+  }
+  #book-pod {
+    order: 2;
+    margin-left: 2rem;
+  }
+  nav > ul {
+    order: 1;
+    flex-flow: column;
+    margin-top: 99px;
+    margin-left: -10rem;
+    text-align: left;
+  }
+  nav li {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .hr-span {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  .items-list {
+    display: none;
+  }
+  hr {
+    margin-left: -3.8rem;
+    border: 0px none white;
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    width: 35px;
+  }
+  .search {
+    border: 0 none white;
+    border-radius: 0;
+    width: 0;
+    height: 0;
+    margin-top: 2rem;
+    margin-right: 0;
+    order: 3;
+  }
+  .search > p > span {
+    display: none;
+  }
+  .search > p > img {
+    margin-left: 2.9rem;
+  }
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .header p {
+    margin-top: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 35px;
+  }
+  .section {
+    margin-top: 60px;
+    flex-flow: column;
+  }
+  .section-image {
+    flex: 0;
+  }
+  .section-image > img {
+    width: 450px;
+    height: 450px;
+  }
+  .section-text-mix {
+    flex: 0;
+  }
+  .section-text {
+    width: 360px;
+    margin-top: -4.4rem;
+    margin-left: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  .section-text > div {
+    padding: 30px;
+  }
+  .section-text h5 {
+    font-size: 1rem;
+  }
+  .section-text h1 {
+    display: none;
+  }
+  .section-text h2 {
+    margin-top: -1.5rem;
+    display: inline-block;
+    font-size: 1.4rem;
+  }
+  .section-text p {
+    margin-top: 10px;
+    font-size: 1.01rem;
+  }
+
+  .footer-first > div > h3,
+  .footer-second > div > h3 {
+    font-size: 1.1rem;
+    margin-left: 4.7rem;
+  }
+
+  .footer > h1 {
+    margin-bottom: 3rem;
+    padding-top: 2.4rem;
+    font-size: 2rem;
+  }
+
+  .footer-first,
+  .footer-second {
+    display: inline-block;
+  }
+  .footer-first > div > img,
+  .footer-second > div > img {
+    margin-left: 4.8rem;
+  }
 }
